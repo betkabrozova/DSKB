@@ -1,45 +1,20 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{title}}</title>
+---
+layout: template.njk
+title: DSKB
+pageId: home
+---
 
-  
-  <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-
-    <header class="header">
-        
-        <img class="header-logo" src="#" alt="logo">
-
-        <div class="header__textcontainer">   
-            <h1 class="header__title">
-                Domov sv. Karla Boromejského
-            </h1>
-
-            <p class="header__text">
-                Odborná a laskavá péče o nemocné seniory
-            </p>
-        </div>
-        <div class="header__menu">
-            <a href="" class="menu__link">Služby</a>
-            <a href="" class="menu__link">O nás</a>
-            <a href="" class="menu__link">Kontakt</a>
-        </div>
-
-        <a href="" class="header__button">Daruji Domovu</a> 
-
-    </header>
-
-    <section class="sluzby">
+    <section class="services">
         <div class="box">
             <h2 class="box__title">Léčebna dlouhodobě nemocných</h2>
             <p class="box__text">
                 Na základě lékařské zprávy přijímáme na přechodnou dobu pacienty na doléčení po nemoci nebo úrazu.
             </p>
-            <a href="#" class="box__button">Více informací</a>
+            <a href="#" class="box__button">Více informací
+                <svg width="40px" height="40px" fill="none">
+                <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
             <img class="box__img" src="" alt="">
         </div>
         <div class="box">
@@ -47,24 +22,42 @@
             <p class="box__text">
                Zajišťujeme na přechodnou dobu bydlení a komplexní podporu seniorům se sníženou soběstačností.
             </p>
-            <a href="#" class="box__button">Více informací</a>
+            <a href="#" class="box__button">Více informací 
+                <svg width="40px" height="40px" fill="none">
+                <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <img class="box__img" src="" alt="">
         </div>
         <div class="box">
             <h2 class="box__title">Denní stacionář</h2>
             <p class="box__text">
                 Denní stacionář nabízí v pracovních dnech celodenní pobyty pro seniory a osoby s fyzickým nebo duševním postižením.
             </p>
-            <a href="#" class="box__button">Více informací</a>
+            <a href="#" class="box__button">Více informací
+                <svg width="40px" height="40px" fill="none">
+                <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <img class="box__img" src="" alt="">
         </div>
     </section>
 
-    <section class="akce">
-        <div class="kalendar">
-
+    <section class="events">
+        <div class="calendar">
+            <div class="calendar-header">Červen 2025</div>
+            <div class="calendar-grid">
+                <div>Po</div><div>Út</div><div>St</div><div>Čt</div><div>Pá</div><div>So</div><div>Ne</div>
+                <div class="empty"></div><div class="empty"></div><div>1</div><div>2</div><div>3</div><div>4</div><div>5</div>
+                <div>6</div><div>7</div><div>8</div><div>9</div><div>10</div><div>11</div><div>12</div>
+                <div>13</div><div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div>
+                <div>20</div><div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div>
+                <div>27</div><div>28</div><div>29</div><div>30</div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+            </div>
         </div>
-        <div class="akce__kontejner">
-            <h2 class="akce__title">Kulturní akce na tento měsíc</h2>
-            <ul class="akce__list">
+        <div class="container-events">
+            <h2 class="events__title">Kulturní akce na tento měsíc</h2>
+            <ul class="events__list">
                 <li></li>
                 <li></li>
                 <li></li>
@@ -72,7 +65,7 @@
         </div>
     </section>
 
-    <section class="galerie">
+    <section class="galery">
         <img src="" alt="">
     </section>
 
