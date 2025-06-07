@@ -4,15 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{title}}</title>
-
-  
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
     <header class="header">
         
-        <img class="header-logo" src="#" alt="logo">
+        <img class="logo" src="#" alt="logo">
 
         <div class="header__textcontainer">   
             <h1 class="header__title">
@@ -24,15 +22,16 @@
             </p>
         </div>
         <div class="header__menu">
-            <a href="" class="menu__link">Služby</a>
-            <a href="" class="menu__link">O nás</a>
-            <a href="" class="menu__link">Kontakt</a>
+            <a href="/services/" class="menu__link">Služby</a>
+            <a href="/about/" class="menu__link">O nás</a>
+            <a href="/kontakt/" class="menu__link">Kontakt</a>
         </div>
 
         <a href="" class="header__button">Daruji Domovu</a> 
 
     </header>
 
+        {{ content | safe }}
 
     <footer class="footer">
         <p class="footer__text">
