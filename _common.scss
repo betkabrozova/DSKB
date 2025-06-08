@@ -1,0 +1,54 @@
+$titles: #b00000;
+$daruj: #2b02f7b2;
+$box-background: #FFFCE7;
+$footer: #535353;
+$font-weight-reg: 400;
+$font-weight-m: 500;
+$spacer: 20px;
+$spacer-small: 10px;
+
+html { box-sizing: border-box; }
+*, :after, :before { box-sizing: inherit; }
+
+body{
+    margin: 0px auto;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    min-width: 400px;
+
+    @media screen and (min-width: 540px){
+        font-size: 16px;
+    }
+    
+}
+p{
+    margin: 10px 0px 0px 0px;
+}
+h2{
+    font-size: 18px;
+    margin: 0;
+
+    @media screen and (min-width: 540px){
+        font-size: 24px;
+    }
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    padding: $spacer;
+    margin: 0px;
+}
+.button{
+    display: block;
+    color: white;
+    padding: $spacer-small;
+    border-radius: 30px;
+    background-color: #b00000;
+}
+

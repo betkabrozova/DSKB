@@ -1,0 +1,62 @@
+@use "common";
+
+
+.header-default{
+header {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: common.$spacer;
+  background-image: linear-gradient(#FFFCE799, #FFFCE799), url(/images/domov_bg.jpg);
+  background-size: cover;
+  background-position: center;
+
+  h2{
+    font-style: italic;
+    margin: common.$spacer;
+    font-weight: common.$font-weight-reg;
+  }
+}
+
+.logo{
+  max-width: 140px;
+  
+}
+.header__title{
+  font-size: 26px;
+  color: black;
+  font-weight: common.$font-weight-m;
+}
+
+
+.menu__container{
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.button--daruj{
+  position: absolute;
+  right: 3vw;
+  bottom: 10px;
+}
+.menu{
+  display: flex;
+
+  a{
+    text-transform: uppercase;
+    display: block;
+    padding: 15px 3vw;
+  }
+
+  a:hover{
+    background-color: rgb(83, 83, 83, 0.3);
+    color:white;
+    text-transform: uppercase;
+  }
+}
+.button--daruj{
+  background-color: common.$daruj
+}
+}

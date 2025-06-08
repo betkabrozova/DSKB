@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+}
+
+*, :after, :before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px auto;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  min-width: 400px;
+}
+@media screen and (min-width: 540px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+p {
+  margin: 10px 0px 0px 0px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0;
+}
+@media screen and (min-width: 540px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  padding: 20px;
+  margin: 0px;
+}
+
+.button {
+  display: block;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #b00000;
+}
+
+.header-alt header {
+  background-image: linear-gradient(to right, #FFFCE7 0%, rgba(255, 252, 231, 0) 120%), url(/images/domov_bg.jpg);
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.header-alt header h2 {
+  display: none;
+}
+.header-alt .logo {
+  max-width: 100px;
+}
+.header-alt .header__title {
+  font-size: 24px;
+  color: black;
+}
+.header-alt .menu__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+.header-alt .button--daruj {
+  position: absolute;
+  right: 3vw;
+  bottom: 10px;
+}
+.header-alt .menu {
+  display: flex;
+}
+.header-alt .menu a {
+  text-transform: uppercase;
+  display: block;
+  padding: 15px 3vw;
+}
+.header-alt .menu a:hover {
+  background-color: rgba(83, 83, 83, 0.3);
+  color: white;
+  text-transform: uppercase;
+}
+.header-alt .button--daruj {
+  background-color: rgba(43, 2, 247, 0.6980392157);
+}
+
+.header-default header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  background-image: linear-gradient(rgba(255, 252, 231, 0.6), rgba(255, 252, 231, 0.6)), url(/images/domov_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.header-default header h2 {
+  font-style: italic;
+  margin: 20px;
+  font-weight: 400;
+}
+.header-default .logo {
+  max-width: 140px;
+}
+.header-default .header__title {
+  font-size: 26px;
+  color: black;
+  font-weight: 500;
+}
+.header-default .menu__container {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.header-default .button--daruj {
+  position: absolute;
+  right: 3vw;
+  bottom: 10px;
+}
+.header-default .menu {
+  display: flex;
+}
+.header-default .menu a {
+  text-transform: uppercase;
+  display: block;
+  padding: 15px 3vw;
+}
+.header-default .menu a:hover {
+  background-color: rgba(83, 83, 83, 0.3);
+  color: white;
+  text-transform: uppercase;
+}
+.header-default .button--daruj {
+  background-color: rgba(43, 2, 247, 0.6980392157);
+}/*# sourceMappingURL=style.css.map */
