@@ -1,0 +1,22 @@
+@use "common";
+
+footer{
+    width: 100%;
+    background-color: common.$footer;
+    padding: common.$spacer;
+    color: white;
+
+    a{
+        color: white;
+        text-decoration: underline;
+    }
+    .container{
+        display: flex;
+        gap: 10px;
+    } 
+
+}
+.copy{
+       text-align: end; 
+       margin-top: common.$spacer;
+    }

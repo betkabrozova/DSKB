@@ -1,0 +1,29 @@
+@use "common";
+
+.box{
+   background-color: common.$box-background;
+   border-radius: 12px;
+   padding: common.$spacer;
+
+   .container{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+   }
+
+   
+   img{
+      display: none;
+   }
+
+   .button{
+      width:fit-content;
+      align-self: center;
+   }
+
+}
+.section--main{
+   display: flex;
+   flex-direction: column;
+   gap: common.$spacer;
+}

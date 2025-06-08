@@ -20,7 +20,7 @@ body {
 }
 
 p {
-  margin: 10px 0px 0px 0px;
+  margin: 0;
 }
 
 h2 {
@@ -148,4 +148,49 @@ section {
 }
 .header-default .button--daruj {
   background-color: rgba(43, 2, 247, 0.6980392157);
+}
+
+footer {
+  width: 100%;
+  background-color: #535353;
+  padding: 20px;
+  color: white;
+}
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+footer .container {
+  display: flex;
+  gap: 10px;
+}
+
+.copy {
+  text-align: end;
+  margin-top: 20px;
+}
+
+.box {
+  background-color: #FFFCE7;
+  border-radius: 12px;
+  padding: 20px;
+}
+.box .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.box img {
+  display: none;
+}
+.box .button {
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: center;
+}
+
+.section--main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }/*# sourceMappingURL=style.css.map */
