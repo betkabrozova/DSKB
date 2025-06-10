@@ -9,7 +9,7 @@ header {
   align-items: center;
   text-align: center;
   gap: common.$spacer;
-  background-image: linear-gradient(#FFFCE799, #FFFCE799), url(/images/domov_bg.jpg);
+  background-image: linear-gradient(#FFFCE700, #FFFCE7bf), url(/images/domov_bg.jpg);
   background-size: cover;
   background-position: center;
 
@@ -22,12 +22,13 @@ header {
 
 .logo{
   max-width: 140px;
+  margin: 10px
   
 }
 .header__title{
-  font-size: 26px;
+  font-size: 30px;
   color: black;
-  font-weight: common.$font-weight-m;
+  font-weight: 600;
 }
 
 

@@ -10,20 +10,54 @@
       flex-direction: column;
       gap: 10px;
    }
-
-   
    img{
       display: none;
    }
-
    .button{
       width:fit-content;
       align-self: center;
    }
-
 }
-.section--main{
+.box--daruji img{
+   display: block;   
+   max-width: 140px;
+   
+}
+.box--kontakt{
+   display: flex;
+   gap:10px;
+   flex-direction: column;
+}
+
+section{
    display: flex;
    flex-direction: column;
    gap: common.$spacer;
 }
+.section--galery{
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 15px;
+   justify-items: center;
+
+   img{
+      max-width: 100%;
+      border-radius: 12px;
+
+      &[alt="sestry boromejky"]{
+         display: none;
+      }
+   }
+}
+
+
+
+.page-title{
+   color: common.$titles;
+}
+h2 + article{
+   margin-top: 10px;
+}
+
+
+

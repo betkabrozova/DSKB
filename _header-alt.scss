@@ -2,10 +2,9 @@
 
 .header-alt{
 header {
-  background-image: linear-gradient(to right, #FFFCE7 0%, rgba(255, 252, 231, 0) 120%), url(/images/domov_bg.jpg);
+  background-image: linear-gradient(#FFFCE700, #FFFCE7bf), url(/images/domov_bg.jpg);
   background-size: cover;
-  background-position: right center;
-  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,9 +15,9 @@ header {
     display: none;
   }
 }
-
 .logo{
   max-width: 100px;
+  margin-top: 10px;
   
 }
 .header__title{
@@ -45,6 +44,7 @@ header {
     text-transform: uppercase;
     display: block;
     padding: 15px 3vw;
+    font-weight: common.$font-weight-m;
   }
 
   a:hover{
@@ -56,6 +56,19 @@ header {
 .button--daruj{
   background-color: common.$daruj
 }
+
+}
+
+@media screen and (min-width: 540px){
+
+header{
+   background-image: linear-gradient(to right, #FFFCE7 0%, rgba(255, 252, 231, 0) 120%), url(/images/domov_bg.jpg);
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+
 
 
 
