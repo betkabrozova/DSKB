@@ -188,13 +188,11 @@ footer img {
   background-color: #FFFCE7;
   border-radius: 12px;
   padding: 20px;
-}
-.box .container {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.box img {
+.box__img--main {
   display: none;
 }
 .box .button {
@@ -207,11 +205,22 @@ footer img {
   display: block;
   max-width: 140px;
 }
+.box--daruji a {
+  align-self: end;
+}
+.box--daruji .box__title {
+  color: rgba(43, 2, 247, 0.6980392157);
+}
 
 .box--kontakt {
   display: flex;
   gap: 10px;
   flex-direction: column;
+}
+
+.box__img--sluzby {
+  width: 100%;
+  border-radius: 0px 0px 12px 12px;
 }
 
 section {
@@ -234,10 +243,64 @@ section {
   display: none;
 }
 
+.section--sluzby {
+  gap: 0px;
+}
+
 .page-title {
   color: #b00000;
 }
 
 h2 + article {
   margin-top: 10px;
+}
+
+.calendar {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 13px;
+}
+
+.calendar__header {
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 18px;
+  background-color: rgba(176, 0, 0, 0.5019607843);
+}
+
+.calendar__grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  background-color: #ccc;
+}
+
+.calendar__grid > div {
+  background-color: white;
+  padding: 14px 0;
+  text-align: center;
+  font-size: 1rem;
+  min-height: 48px;
+  box-sizing: border-box;
+}
+
+.calendar__grid > div:nth-child(-n+7) {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  color: #333;
+}
+
+.calendar__grid .empty {
+  background-color: #f9f9f9;
+  pointer-events: none;
+}
+
+.calendar__grid .event {
+  background-color: rgba(43, 2, 247, 0.1882352941);
 }/*# sourceMappingURL=style.css.map */

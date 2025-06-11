@@ -4,13 +4,11 @@
    background-color: common.$box-background;
    border-radius: 12px;
    padding: common.$spacer;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
 
-   .container{
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-   }
-   img{
+   &__img--main{
       display: none;
    }
    .button{
@@ -18,15 +16,27 @@
       align-self: center;
    }
 }
-.box--daruji img{
+.box--daruji{
+   img{
    display: block;   
    max-width: 140px;
+   }
+   a{
+   align-self: end;
+   }
+   .box__title{
+      color: common.$daruj;
+   }
    
 }
 .box--kontakt{
    display: flex;
    gap:10px;
    flex-direction: column;
+}
+.box__img--sluzby{
+   width: 100%;
+   border-radius: 0px 0px 12px 12px;
 }
 
 section{
@@ -49,7 +59,9 @@ section{
       }
    }
 }
-
+.section--sluzby{
+   gap: 0px;
+}
 
 
 .page-title{
