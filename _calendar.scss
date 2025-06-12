@@ -14,10 +14,9 @@
 .calendar__header {
   color: white;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px;
   font-size: 18px;
-  background-color: #b0000080;;
-
+  background-color: #b0000080;
 }
 
 .calendar__grid {
@@ -29,10 +28,10 @@
 
 .calendar__grid > div {
   background-color: white;
-  padding: 14px 0;
+  padding: 15px 0px;
   text-align: center;
   font-size: 1rem;
-  min-height: 48px;
+  min-height: 30px;
   box-sizing: border-box;
 }
 
@@ -41,11 +40,38 @@
   font-weight: bold;
   color: #333;
 }
+.calendar__grid > div:nth-child(7n + 6) {
+  background-color: #ffeeba;
+}
 
+.calendar__grid > div:nth-child(7n) {
+  background-color: #f8d7da;
+}
 .calendar__grid .empty {
-  background-color: #f9f9f9;
+  background-color: #a3a3a3 !important;
   pointer-events: none;
 }
 .calendar__grid .event{
-    background-color: #2b02f730;
+    background-color: #2b02f730 !important;
+}
+
+@media screen and (min-width:700px){
+
+.calendar {
+  max-width: 250px;
+  
+}
+.calendar__grid > div {
+  padding: 5px 0px;
+  font-size: 14px;
+}
+.calendar__header {
+  padding: 8px;
+  font-size: 16px;
+}
+
+
+
+
+
 }

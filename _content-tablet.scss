@@ -1,0 +1,57 @@
+@media screen and (min-width:700px){
+
+
+
+.box--main{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 0px;
+
+    .box__text{
+        grid-column: span 2 ;
+    }
+    .button{
+        grid-row: 1;
+        grid-column: 2;
+        justify-self: end;
+    }
+}
+.section--events{
+    flex-direction: row;
+}
+.section--galery{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 5px;
+   justify-items: center;
+
+   img{
+      width: 100%;
+        height: 100%;
+      border-radius: 12px;
+
+      &[alt="sestry boromejky"]{
+         display: block;
+      }
+   }
+}
+.section--about{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
