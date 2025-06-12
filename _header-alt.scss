@@ -54,7 +54,11 @@ header {
   }
 }
 .button--daruj{
-  background-color: common.$daruj
+  background-color: common.$secondary;
+
+  &:hover{
+    background-color: common.$secondary-hover;
+  }
 }
 
 }
@@ -67,10 +71,4 @@ header{
   background-position: right center;
   background-repeat: no-repeat;
 }
-
-
-
-
-
-
 }

@@ -51,6 +51,47 @@ section {
   border-radius: 30px;
   background-color: #b00000;
 }
+.button:hover {
+  background-color: #890101;
+}
+
+.list {
+  margin: 0;
+}
+
+.pdf-link {
+  color: #f4b703;
+  text-decoration: underline;
+}
+.pdf-link:hover {
+  color: rgb(234, 114, 2);
+}
+.pdf-link:visited {
+  color: #b00000;
+}
+
+.mail-link {
+  color: rgba(43, 2, 247, 0.6980392157);
+  text-decoration: underline;
+}
+.mail-link:hover {
+  color: #0f0282;
+}
+
+.page-title, .article__title {
+  color: #b00000;
+}
+
+h2 + p {
+  margin-top: 10px;
+}
+
+.button--daruj {
+  background-color: rgba(43, 2, 247, 0.6980392157);
+}
+.button--daruj:hover {
+  background-color: #0f0282;
+}
 
 .header-alt header {
   background-image: linear-gradient(rgba(255, 252, 231, 0), rgba(255, 252, 231, 0.7490196078)), url(/images/domov_bg.jpg);
@@ -100,6 +141,9 @@ section {
 }
 .header-alt .button--daruj {
   background-color: rgba(43, 2, 247, 0.6980392157);
+}
+.header-alt .button--daruj:hover {
+  background-color: #0f0282;
 }
 
 @media screen and (min-width: 540px) {
@@ -156,9 +200,6 @@ section {
   background-color: rgba(83, 83, 83, 0.3);
   color: white;
   text-transform: uppercase;
-}
-.header-default .button--daruj {
-  background-color: rgba(43, 2, 247, 0.6980392157);
 }
 
 footer {
@@ -247,12 +288,14 @@ section {
   gap: 0px;
 }
 
-.page-title {
-  color: #b00000;
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-
-h2 + article {
-  margin-top: 10px;
+article img {
+  width: 100%;
+  border-radius: 12px;
 }
 
 .calendar {

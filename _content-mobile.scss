@@ -25,9 +25,8 @@
    align-self: end;
    }
    .box__title{
-      color: common.$daruj;
+      color: common.$secondary;
    }
-   
 }
 .box--kontakt{
    display: flex;
@@ -63,13 +62,14 @@ section{
    gap: 0px;
 }
 
+article{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
 
-.page-title{
-   color: common.$titles;
+   img{
+      width: 100%;
+      border-radius: 12px;
+   }
 }
-h2 + article{
-   margin-top: 10px;
-}
-
-
 

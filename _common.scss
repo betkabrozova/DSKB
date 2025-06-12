@@ -1,6 +1,10 @@
-$titles: #b00000;
-$daruj: #2b02f7b2;
+$primary: #b00000;
+$primary-hover: #890101;
+$secondary: #2b02f7b2;
+$secondary-hover: #0f0282;
 $box-background: #FFFCE7;
+$pdf-link: #f4b703 ;
+$pdf-hover:rgb(234, 114, 2);
 $footer: #535353;
 $font-weight-reg: 400;
 $font-weight-m: 500;
@@ -48,6 +52,43 @@ section{
     color: white;
     padding: $spacer-small;
     border-radius: 30px;
-    background-color: #b00000;
-}
+    background-color: $primary;
 
+    &:hover{
+        background-color: $primary-hover;
+    }
+}
+.list{
+    margin: 0;
+}
+.pdf-link{
+      color: $pdf-link;
+      text-decoration: underline;
+      &:hover{
+         color:$pdf-hover;
+      }
+      &:visited{
+         color:$primary;
+      }
+   }
+.mail-link{
+    color:$secondary;
+    text-decoration: underline;
+
+    &:hover{
+        color:$secondary-hover;
+    }
+}
+.page-title, .article__title{
+   color:$primary;
+}
+h2 + p{
+   margin-top: 10px;
+}
+.button--daruj{
+  background-color:$secondary; 
+  
+  &:hover{
+    background-color:$secondary-hover;
+  }
+}
