@@ -3,10 +3,6 @@
 
 
 .box--main{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 0px;
-
     .box__text{
         grid-column: span 2 ;
     }
@@ -15,6 +11,10 @@
         grid-column: 2;
         justify-self: end;
     }
+}
+.section--main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 .section--events{
     flex-direction: row;
@@ -39,6 +39,13 @@
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 10px;
+}
+.section--kontakt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+article img{
+    width: 60%;
 }
 
 

@@ -41,7 +41,9 @@
    padding: 10px;
    display: flex;
    flex-direction: row;
-   justify-items: center;
+   justify-content: center;
+   align-items: center;
+
 
    img{
       max-height: 3em;
@@ -80,7 +82,7 @@ section{
 .section--about{
    display: grid;
    grid-template-columns: 1fr 1fr;
-   gap: 5x;
+   gap: 5px;
 }
 
 article{

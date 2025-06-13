@@ -268,7 +268,8 @@ footer img {
   padding: 10px;
   display: flex;
   flex-direction: row;
-  justify-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .box--about img {
   max-height: 3em;
@@ -304,7 +305,7 @@ section {
 .section--about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5x;
+  gap: 5px;
 }
 
 article {
@@ -318,11 +319,6 @@ article img {
 }
 
 @media screen and (min-width: 700px) {
-  .box--main {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 0px;
-  }
   .box--main .box__text {
     grid-column: span 2;
   }
@@ -330,6 +326,10 @@ article img {
     grid-row: 1;
     grid-column: 2;
     justify-self: end;
+  }
+  .section--main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
   .section--events {
     flex-direction: row;
@@ -352,6 +352,13 @@ article img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+  }
+  .section--kontakt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  article img {
+    width: 60%;
   }
 }
 .calendar {
