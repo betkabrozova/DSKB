@@ -24,8 +24,10 @@ header {
   font-size: 24px;
   color: black;
 }
-
-
+.header__container{
+   display: flex;
+  flex-direction: column;
+}
 .menu__container{
   display: flex;
   justify-content: space-between;
@@ -61,14 +63,31 @@ header {
   }
 }
 
-}
-
 @media screen and (min-width: 540px){
 
 header{
-   background-image: linear-gradient(to right, #FFFCE7 0%, rgba(255, 252, 231, 0) 120%), url(/images/domov_bg.jpg);
+  background-image: linear-gradient(to right, #FFFCE7 0%, rgba(255, 252, 231, 0) 90%), url(/images/domov_bg.jpg);
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
+  gap: 0px;
+}
+.header__container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 30px;
+
+  .logo{
+    max-width: 100px;
+    padding: 0px 20px 10px 0px;
+    margin: 0;
+  }
+
+}
+.header__title{
+  font-size: 28px;
 }
 }
+}
+

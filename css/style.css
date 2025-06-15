@@ -114,6 +114,10 @@ h2 + p {
   font-size: 24px;
   color: black;
 }
+.header-alt .header__container {
+  display: flex;
+  flex-direction: column;
+}
 .header-alt .menu__container {
   display: flex;
   justify-content: space-between;
@@ -145,15 +149,30 @@ h2 + p {
 .header-alt .button--daruj:hover {
   background-color: #0f0282;
 }
-
 @media screen and (min-width: 540px) {
-  header {
-    background-image: linear-gradient(to right, #FFFCE7 0%, rgba(255, 252, 231, 0) 120%), url(/images/domov_bg.jpg);
+  .header-alt header {
+    background-image: linear-gradient(to right, #FFFCE7 0%, rgba(255, 252, 231, 0) 90%), url(/images/domov_bg.jpg);
     background-size: cover;
     background-position: right center;
     background-repeat: no-repeat;
+    gap: 0px;
+  }
+  .header-alt .header__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .header-alt .header__container .logo {
+    max-width: 100px;
+    padding: 0px 20px 10px 0px;
+    margin: 0;
+  }
+  .header-alt .header__title {
+    font-size: 28px;
   }
 }
+
 .header-default header {
   display: flex;
   flex-direction: column;
@@ -168,6 +187,12 @@ h2 + p {
   font-style: italic;
   margin: 20px;
   font-weight: 400;
+}
+.header-default .header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .header-default .logo {
   max-width: 140px;
@@ -232,9 +257,7 @@ footer img {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-.box__img--main {
-  display: none;
+  justify-content: space-between;
 }
 .box .button {
   width: -moz-fit-content;
@@ -319,14 +342,6 @@ article img {
 }
 
 @media screen and (min-width: 700px) {
-  .box--main .box__text {
-    grid-column: span 2;
-  }
-  .box--main .button {
-    grid-row: 1;
-    grid-column: 2;
-    justify-self: end;
-  }
   .main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
