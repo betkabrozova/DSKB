@@ -264,17 +264,17 @@ footer img {
   border-radius: 0px 0px 12px 12px;
 }
 
-.box--about {
+.box--svety {
   padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.box--about img {
+.box--svety img {
   max-height: 3em;
 }
-.box--about h2 {
+.box--svety h2 {
   font-size: 16px;
 }
 
@@ -284,25 +284,25 @@ section {
   gap: 20px;
 }
 
-.section--galery {
+.galery {
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
   justify-items: center;
 }
-.section--galery img {
+.galery img {
   max-width: 100%;
   border-radius: 12px;
 }
-.section--galery img[alt="sestry boromejky"] {
+.galery img[alt="sestry boromejky"] {
   display: none;
 }
 
-.section--sluzby {
+.sluzby {
   gap: 0px;
 }
 
-.section--about {
+.svety {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5px;
@@ -327,33 +327,38 @@ article img {
     grid-column: 2;
     justify-self: end;
   }
-  .section--main {
+  .main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .section--events {
+  .events {
     flex-direction: row;
   }
-  .section--galery {
+  .galery {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
     justify-items: center;
   }
-  .section--galery img {
+  .galery img {
     width: 100%;
     height: 100%;
     border-radius: 12px;
   }
-  .section--galery img[alt="sestry boromejky"] {
+  .galery img[alt="sestry boromejky"] {
     display: block;
   }
-  .section--about {
+  .about .article--about:last-child {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: auto 40%;
   }
-  .section--kontakt {
+  .about .article--about:last-child img {
+    width: 100%;
+  }
+  .sluzby img {
+    display: none;
+  }
+  .kontakt {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
