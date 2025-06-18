@@ -1,0 +1,53 @@
+@use "common";
+
+@media screen and (min-width:960px){
+.galery{
+   display: grid;
+   grid-auto-flow: column;       
+  grid-auto-columns: 1fr; ;
+   gap: 5px;
+   justify-items: center;
+
+   img{
+      object-fit: cover;
+   }
+}
+.svety{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 5px;
+
+   .box{
+    padding: 20px;
+   }
+}
+.kontakt{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.article--sluzba{
+    display: flex;
+    flex-direction: row;
+
+    img{       
+        max-width: 30%;
+    }
+
+}
+.article--list{
+    max-width: 60%;
+}
+.sluzby{ 
+    flex-direction: row;
+
+img{
+    display: block;
+    max-width: 35%;
+    object-fit: cover;
+    border-radius: 0px 12px 12px 0px;
+}
+}
+
+
+
+}
