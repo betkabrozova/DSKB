@@ -4,6 +4,7 @@ module.exports = function(eleventyConfig) {
   // Zkopírovat složku css/ do _site/css
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("pdf");
+  eleventyConfig.addPassthroughCopy("icons");
 
   return {
     templateFormats: ["njk", "html", "md"],
