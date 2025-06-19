@@ -101,7 +101,7 @@ h2 + p {
 }
 
 .header-alt header {
-  background-image: linear-gradient(rgba(255, 252, 231, 0), rgba(255, 252, 231, 0.7490196078)), url(/images/domov_bg.jpg);
+  background-image: linear-gradient(rgba(255, 252, 231, 0), rgba(255, 252, 231, 0.7490196078)), url(/images/zahrada_velka.JPG);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -120,6 +120,8 @@ h2 + p {
 .header-alt .header__title {
   font-size: 24px;
   color: black;
+  text-shadow: 2px 2px 5px rgb(219, 219, 219);
+  font-weight: 650;
 }
 .header-alt .header__container {
   display: flex;
@@ -158,9 +160,9 @@ h2 + p {
 }
 @media screen and (min-width: 540px) {
   .header-alt header {
-    background-image: linear-gradient(to right, #FFFCE7 0%, rgba(255, 252, 231, 0) 90%), url(/images/domov_bg.jpg);
+    background-image: linear-gradient(to right, #FFFCE7 0%, rgba(255, 252, 231, 0) 100%), url(/images/zahrada_vrsek.JPG);
     background-size: cover;
-    background-position: right center;
+    background-position: center;
     background-repeat: no-repeat;
     gap: 0px;
   }
@@ -177,6 +179,7 @@ h2 + p {
   }
   .header-alt .header__title {
     font-size: 28px;
+    font-weight: 650;
   }
 }
 
@@ -186,14 +189,13 @@ h2 + p {
   align-items: center;
   text-align: center;
   gap: 20px;
-  background-image: linear-gradient(rgba(255, 252, 231, 0), rgba(255, 252, 231, 0.7490196078)), url(/images/domov_bg.jpg);
+  background-image: linear-gradient(rgba(255, 252, 231, 0), rgba(255, 252, 231, 0.7490196078)), url(/images/zahrada_velka.JPG);
   background-size: cover;
-  background-position: center;
 }
 .header-default header h2 {
   font-style: italic;
+  font-weight: 500;
   margin: 20px;
-  font-weight: 400;
 }
 .header-default .header__container {
   display: flex;
@@ -208,7 +210,8 @@ h2 + p {
 .header-default .header__title {
   font-size: 30px;
   color: black;
-  font-weight: 600;
+  font-weight: 650;
+  text-shadow: 2px 2px 5px rgb(219, 219, 219);
 }
 @media screen and (min-width: 960px) {
   .header-default .header__title {
@@ -283,6 +286,7 @@ footer img {
   justify-content: space-between;
 }
 .box .button {
+  width: -moz-fit-content;
   width: fit-content;
   align-self: center;
 }
@@ -381,7 +385,8 @@ article img {
   .galery img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 12px;
   }
   .galery img[alt="sestry boromejky"] {
@@ -414,7 +419,8 @@ article img {
     justify-items: center;
   }
   .galery img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .svety {
     display: grid;
@@ -444,7 +450,8 @@ article img {
   .sluzby img {
     display: block;
     max-width: 35%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 0px 12px 12px 0px;
   }
 }
@@ -540,6 +547,4 @@ article img {
   .events .list {
     line-height: 2.5;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

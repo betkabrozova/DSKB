@@ -2,7 +2,7 @@
 
 .header-alt{
 header {
-  background-image: linear-gradient(#FFFCE700, #FFFCE7bf), url(/images/domov_bg.jpg);
+  background-image: linear-gradient(#FFFCE700, #FFFCE7bf), url(/images/zahrada_velka.JPG);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -23,6 +23,8 @@ header {
 .header__title{
   font-size: 24px;
   color: black;
+  text-shadow: 2px 2px 5px rgb(219, 219, 219);
+  font-weight: common.$font-weight-title;
 }
 .header__container{
    display: flex;
@@ -66,9 +68,9 @@ header {
 @media screen and (min-width: 540px){
 
 header{
-  background-image: linear-gradient(to right, #FFFCE7 0%, rgba(255, 252, 231, 0) 90%), url(/images/domov_bg.jpg);
+  background-image: linear-gradient(to right, #FFFCE7 0%, rgba(255, 252, 231, 0) 100%), url(/images/zahrada_vrsek.JPG);
   background-size: cover;
-  background-position: right center;
+  background-position: center;
   background-repeat: no-repeat;
   gap: 0px;
 }
@@ -87,6 +89,7 @@ header{
 }
 .header__title{
   font-size: 28px;
+  font-weight: common.$font-weight-title;
 }
 }
 }
